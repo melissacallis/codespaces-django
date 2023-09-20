@@ -37,7 +37,7 @@
                 <a href="#">
                     <span class="d-block d-lg-none">Melissa Cavazos</span>
                     <span class="d-none d-lg-block">
-                        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" img src="{% static 'img/profile.jpg' %} alt="...">
+                        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" <img src="{% static 'img/profile.jpg' %}" alt="Card image cap">
                     </span>
                 </a>
                 
@@ -67,13 +67,16 @@
             <div class="resume-section-content">
                 <h1 class="mb-0">
                     Melissa
-                    <span class="text-primary">Cavazos <a href="img/myresume.pdf" class="btn btn-lg btn-primary">View Resume</a> <!-- Add the button here -->
-
+                    <span class="text-primary">Cavazos</span>
+                    <a href="{% static 'img/myresume.pdf' %}" target="_blank" class="btn btn-lg btn-primary">View Resume</a>
                 </h1>
                 <div class="subheading mb-5">
                     · Corpus Christi, Tx 78413 · (361) 558-6624 ·
                     <a href="mailto:name@email.com">melissacallis@yahoo.com</a>
                 </div>
+            </div>
+        </section>
+        
 
                 <p class="lead mb-5"><ul>
                     <li>Experience with programming languages such as Java, Python/</li>
@@ -215,7 +218,9 @@
 <div class="card-group mt-6">
 <!-- First Card -->
 <div class="card mb-4"> <!-- Add mb-4 class to create space -->
-    <img class="card-img-top mx-auto" src="img/auctionscreenshot.png" alt="Card image cap" style="max-width: 70%;">
+    <a href="https://projectsheroku-46cc8d3cc4e6.herokuapp.com/">
+        <img class="card-img-top mx-auto" src="{% static 'img/auctionscreenshot.png' %}" alt="Card image cap" style="max-width: 70%;">
+    </a>
     <div class="card-body">
         <h5 class="card-title">Recipe Project Includes</h5>
         <p class="card-text">
@@ -243,7 +248,9 @@
 </div>
 <!-- Second Card -->
 <div class="card mb-4"> <!-- Add mb-4 class to create space -->
-    <img class="card-img-top mx-auto" src="img/recipescreenshot.png" alt="Card image cap" style="max-width: 70%;">
+    <a href="https://projectsheroku-recipes-6db00650a597.herokuapp.com/">
+    <img class="card-img-top mx-auto" <img src="{% static 'img/recipescreenshot.png' %}" alt="Card image cap" style="max-width: 70%;">
+    </a>
     <div class="card-body">
         <br>
         <h5 class="card-title">CS50 Auction Project Includes:</h5>
@@ -293,27 +300,27 @@
                     <!-- Thumbnail Image with PDF Icon -->
                     <img
                     class="thumbnail-image"
-                    src="img/cs50p.png"
+                    <img src="{% static 'img/cs50p.png' %}"
                     alt="PDF Thumbnail"
-                    data-pdf-src="assets/img/cs50p.png"
+                    data-pdf-src="{% static 'img/cs50p.png' %}"
 />
                 </li>
                 <li class="list-group-item">
                     <i class="fas fa-trophy text-warning me-2"></i> Introduction to Web Development with HTML5, CSS3, and JavaScript
                     <img
                     class="thumbnail-image"
-                    src="img/webdev.png"
+                    src="{% static 'img/webdev.png' %}"
                     alt="PDF Thumbnail"
-                    data-pdf-src="assets/img/webdev.png"
+                    data-pdf-src="{% static 'img/cs50p.png' %}"
                     />
                 </li>
                 <li class="list-group-item">
                     <i class="fas fa-trophy text-warning me-2"></i> Introduction to Cloud Computing- IBM Certification
                     <img
                     class="thumbnail-image"
-                    src="img/cloudcomputing.png"
+                    src="{% static 'img/cloudcomputing.png' %}"
                     alt="PDF Thumbnail"
-                    data-pdf-src="img/webdev.png"
+                    data-pdf-src="{% static 'img/cloudcomputing.png' %}"
                     />
                 </li>
 
