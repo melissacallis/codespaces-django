@@ -10867,19 +10867,57 @@ p.lead {
   font-size: 1.5rem;
 }
 
+/* Side header background and text color */
 #sideNav {
   padding-left: 1rem;
   padding-right: 1rem;
+  background-color: #333; /* Set your desired background color here */
+  color: #001f3f; /* Set text color */
 }
+
+/* Navbar link colors */
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
+  color: #001f3f; /* Set link color */
 }
+
+#sideNav .navbar-nav .nav-item .nav-link:hover {
+  color: #001f3f; /* Set link color on hover */
+}
+
+/* Toggler button focus color */
 #sideNav .navbar-toggler:focus {
   outline-color: #d48a6e;
 }
 
+/* Side header background and text color */
+#sideNav {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #001f3f !important; /* Set your desired background color here */
+  color: #fff !important; /* Set text color */
+}
+
+/* Navbar link colors */
+#sideNav .navbar-nav .nav-item .nav-link {
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  color: #001f3f !important; /* Set link color */
+}
+
+#sideNav .navbar-nav .nav-item .nav-link:hover {
+  color: #fff !important; /* Set link color on hover */
+}#001f3f
+
+/* Toggler button focus color */
+#sideNav .navbar-toggler:focus {
+  outline-color: #001f3f !important;
+}
+
+/* Media query for larger screens */
 @media (min-width: 992px) {
   #sideNav {
     padding-left: 0;
@@ -10892,35 +10930,16 @@ p.lead {
     flex-direction: column;
     width: 17rem;
     height: 100vh;
+    background-color: #333 !important; /* Set background color here as well for larger screens */
   }
   #sideNav .navbar-brand {
     display: flex;
     margin: auto auto 0;
     padding: 0.5rem;
   }
-  #sideNav .navbar-brand .img-profile {
-    max-width: 10rem;
-    max-height: 10rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
-  }
-  #sideNav .navbar-collapse {
-    display: flex;
-    align-items: flex-start;
-    flex-grow: 0;
-    width: 100%;
-    margin-bottom: auto;
-  }
-  #sideNav .navbar-collapse .navbar-nav {
-    flex-direction: column;
-    width: 100%;
-  }
-  #sideNav .navbar-collapse .navbar-nav .nav-item {
-    display: block;
-  }
-  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
-    display: block;
-  }
 }
+
+
 .social-icons .social-icon {
   display: inline-flex;
   align-items: center;
@@ -10944,15 +10963,13 @@ p.lead {
   font-size: 3rem;
 }
 
-section.resume-section {
-  display: flex;
-  align-items: center;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  max-width: 75rem;
+/* Reduce space between sections */
+.resume-section {
+  padding-top: 5px; /* Reduces top padding */
+  padding-bottom: 5px; /* Reduces bottom padding */
+  margin-bottom: 15px; /* Reduces margin between sections */
 }
+
 section.resume-section .resume-section-content {
   width: 100%;
 }
