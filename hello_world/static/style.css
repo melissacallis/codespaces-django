@@ -10871,51 +10871,33 @@ p.lead {
 #sideNav {
   padding-left: 1rem;
   padding-right: 1rem;
-  background-color: #333; /* Set your desired background color here */
-  color: #001f3f; /* Set text color */
 }
-
-/* Navbar link colors */
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
-  color: #001f3f; /* Set link color */
 }
-
-#sideNav .navbar-nav .nav-item .nav-link:hover {
-  color: #001f3f; /* Set link color on hover */
-}
-
-/* Toggler button focus color */
 #sideNav .navbar-toggler:focus {
   outline-color: #d48a6e;
 }
 
-/* Side header background and text color */
-#sideNav {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  background-color: #001f3f !important; /* Set your desired background color here */
-  color: #fff !important; /* Set text color */
-}
-
-/* Navbar link colors */
-#sideNav .navbar-nav .nav-item .nav-link {
-  font-weight: 800;
-  letter-spacing: 0.05rem;
-  text-transform: uppercase;
-  color: #001f3f !important; /* Set link color */
-}
-
-#sideNav .navbar-nav .nav-item .nav-link:hover {
-  color: #fff !important; /* Set link color on hover */
-}#001f3f
-
-/* Toggler button focus color */
-#sideNav .navbar-toggler:focus {
-  outline-color: #001f3f !important;
-}
+@media (min-width: 992px) {
+  #sideNav {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+    height: 100vh;
+  }
+  #sideNav .navbar-brand {
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
 
 /* Media query for larger screens */
 @media (min-width: 992px) {
