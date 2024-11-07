@@ -1,0 +1,156 @@
+/* Global Styles */
+body {
+    font-family: 'Muli', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    color: #333;
+    font-weight: 700;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Side Navigation */
+#sideNav {
+    background-color: #2d4a6f;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link {
+    font-weight: 700;
+    color: #007acc;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link:hover {
+    color: #005b99;
+}
+
+#sideNav .navbar-brand img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: #007acc;
+    margin: 0 5px;
+}
+
+.social-icons a:hover {
+    color: #005b99;
+}
+
+/* Main Content Area */
+.container {
+    padding: 20px;
+}
+
+.resume-section {
+    padding: 2rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.resume-section h1 span.text-primary {
+    color: #007acc;
+}
+
+.resume-section h2 {
+    font-size: 1.75rem;
+    color: #2d4a6f;
+}
+
+/* Experience and Education Cards */
+.card {
+    border: none;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #007acc;
+    color: white;
+    font-size: 1.5rem;
+    padding: 15px;
+}
+
+.card-body {
+    padding: 20px;
+    color: #333;
+}
+
+/* Carousel */
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+.carousel-controls-bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 40px;
+    height: 40px;
+}
+
+/* Lists for Skills and Workflow */
+.dev-icons img {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+
+.fa-ul li {
+    margin: 10px 0;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #007acc;
+    border: none;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #005b99;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    #sideNav {
+        height: auto;
+        position: relative;
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    #sideNav .navbar-brand img {
+        width: 100px;
+    }
+    
+    .resume-section {
+        padding: 1.5rem 0;
+    }
+}
+
