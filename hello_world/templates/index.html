@@ -32,61 +32,42 @@
 
 <body>
 
-<!-- Top Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container">
-        <!-- Logo / Brand Name -->
-        <a class="navbar-brand" href="#page-top">
-            <img src="{% static 'img/profile.jpg' %}" alt="Profile" class="rounded-circle me-2" style="width: 40px; height: 40px;">
-            Portfolio
-        </a>
-
-        <!-- Toggler for Mobile View -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Navigation Links -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skills">Skills & Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#awards">Certifications</a></li>
-                <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
-            </ul>
+    <nav id="topNavbar" class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container-fluid">
+            <!-- Logo and Brand -->
+            <a class="navbar-brand d-flex align-items-center" href="#page-top">
+                <img src="{% static 'img/profile.jpg' %}" alt="Profile" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+                Melissa Cavazos
+            </a>
+    
+            <!-- Toggler for Mobile View -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills & Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#awards">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
+                </ul>
+            </div>
+    
             <!-- Social Icons -->
             <div class="d-flex align-items-center ms-lg-3">
                 <a href="https://www.linkedin.com/in/missycavazos" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/melissacallis" class="text-white"><i class="fab fa-github"></i></a>
             </div>
         </div>
-    </div>
-</nav>
+    </nav>
+    
+    
 
-<nav id="stickyNav" class="navbar" style="display: none;">
-    <ul class="nav flex-column">
-        <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#experience">Experience</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#education">Education</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#awards">Awards</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#interests">Interests</a>
-        </li>
-    </ul>
-</nav>
+
 
 
 

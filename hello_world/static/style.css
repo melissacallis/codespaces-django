@@ -46,6 +46,13 @@ body {
     color: #ffee99; /* Soft yellow for active links */
 }
 
+#topNav {
+    position: sticky;
+    top: 0;
+    z-index: 1030; /* Ensure it stays above other elements */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for better visibility */
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Saira Extra Condensed', sans-serif;
     color: #333;
@@ -58,71 +65,42 @@ ul {
 }
 
 /* Side Navigation */
-/* Side Navigation */
-#sideNav {
-    position: fixed; /* Fix the navbar on the left side */
-    top: 0; /* Align to the top */
-    left: 0; /* Align to the left */
-    height: 100vh; /* Full viewport height */
-    width: 250px; /* Fixed width */
-    background-color: #2d4a6f; /* Navbar background color */
+#sideNavbar {
+    position: sticky; /* Makes the navbar sticky */
+    top: 0; /* Align to the top of the viewport */
+    left: 0; /* Align to the left of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    width: 250px; /* Fixed width for the sidebar */
+    z-index: 1030; /* Ensure it stays on top */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 1rem; /* Padding around the content */
+    overflow-y: auto; /* Enable scrolling if content exceeds height */
+}
+
+/* Navbar Links */
+#sideNavbar .nav-link {
+    font-weight: 600;
     color: white;
-    display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center align items horizontally */
-    padding: 1rem 0; /* Add padding around items */
-    z-index: 1000; /* Ensure it stays on top */
-    overflow-y: auto; /* Enable scrolling for overflowing content */
-}
-
-/* Profile Section */
-#sideNav .navbar-brand {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-
-#sideNav .navbar-brand img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    border: 3px solid white;
-}
-
-#sideNav .navbar-nav {
-    flex-direction: column; /* Stack navigation items vertically */
-    width: 100%;
-}
-
-#sideNav .navbar-nav .nav-item {
-    text-align: center;
-}
-
-#sideNav .navbar-nav .nav-link {
-    font-weight: 700;
-    color: #007acc;
     text-transform: uppercase;
-    margin: 10px 0;
     padding: 0.5rem 1rem;
-    transition: color 0.3s;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-#sideNav .navbar-nav .nav-link:hover {
-    color: #005b99;
+#sideNavbar .nav-link:hover {
+    background-color: #0056b3; /* Slightly darker blue */
+    color: #ffcc00; /* Bright yellow */
 }
 
 /* Social Icons */
-#sideNav .social-icon {
-    font-size: 1.2rem;
-    color: #ffffff;
-    margin: 0 0.5rem;
+#sideNavbar .text-white i {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
 }
 
-#sideNav .social-icon:hover {
-    color: #007acc;
+#sideNavbar .text-white i:hover {
+    color: #ffcc00; /* Bright yellow on hover */
 }
+
 
 
 
