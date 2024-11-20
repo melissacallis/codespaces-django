@@ -440,23 +440,14 @@
         const topNav = document.getElementById("topNav");
         const stickyNav = document.getElementById("stickyNav");
 
-        // Scroll event listener to toggle sticky navbar
         window.addEventListener("scroll", function () {
             const topNavBottom = topNav.getBoundingClientRect().bottom;
 
             if (topNavBottom <= 0) {
                 stickyNav.style.display = "block"; // Show sticky navbar
-                stickyNav.setAttribute("aria-hidden", "false");
             } else {
                 stickyNav.style.display = "none"; // Hide sticky navbar
-                stickyNav.setAttribute("aria-hidden", "true");
             }
-        });
-
-        // Prevent stickyNav focus lock
-        stickyNav.addEventListener("focus", function (e) {
-            e.preventDefault(); // Prevent focus lock
-            topNav.focus(); // Redirect focus to topNav
         });
     });
 </script>
