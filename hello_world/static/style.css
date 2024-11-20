@@ -8,23 +8,42 @@ body {
 }
 
 #stickyNav {
-    display: block !important;
     position: fixed;
-    top: 0;
-    width: 100%;
+    top: 20%; /* Position it slightly below the top */
+    left: 0; /* Align to the left edge */
+    width: 150px; /* Width of the sticky box */
+    background-color: #0077cc; /* Pretty blue background */
+    color: white;
+    padding: 10px;
     z-index: 1030;
-    background-color: hsl(199, 50%, 40%);
-    border-bottom: 1px solid #ddd;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0 8px 8px 0; /* Rounded edges on the right */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
+/* Styling the nav links */
 #stickyNav .nav-link {
+    color: white;
+    font-size: 14px;
     font-weight: bold;
-    color: #007bff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 8px 5px;
+    display: block;
+    border-radius: 4px;
 }
 
+/* Hover effect for links */
 #stickyNav .nav-link:hover {
-    color: #0056b3;
+    background-color: #005fa3;
+    color: #ffcc00; /* Bright yellow for hover effect */
+}
+
+/* Active link styling */
+#stickyNav .nav-item.active .nav-link {
+    background-color: #004080; /* Darker blue for active */
+    color: #ffee99; /* Soft yellow for active links */
 }
 
 h1, h2, h3, h4, h5, h6 {
