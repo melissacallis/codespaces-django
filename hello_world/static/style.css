@@ -3,7 +3,18 @@ body {
     font-family: 'Muli', sans-serif;
     background-color: #f0f4f8;
     color: #333;
+    margin-left: 100px; /* Push content to the right */
 }
+
+#stickyNav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030; /* Ensure it appears above other content */
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+}
+
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Saira Extra Condensed', sans-serif;
@@ -17,29 +28,74 @@ ul {
 }
 
 /* Side Navigation */
+/* Side Navigation */
 #sideNav {
-    background-color: #2d4a6f;
+    position: fixed; /* Fix the navbar on the left side */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    height: 100vh; /* Full viewport height */
+    width: 250px; /* Fixed width */
+    background-color: #2d4a6f; /* Navbar background color */
     color: white;
-    padding: 1rem;
-    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items horizontally */
+    padding: 1rem 0; /* Add padding around items */
+    z-index: 1000; /* Ensure it stays on top */
+    overflow-y: auto; /* Enable scrolling for overflowing content */
 }
 
-#sideNav .navbar-nav .nav-item .nav-link {
-    font-weight: 700;
-    color: #007acc;
-    text-transform: uppercase;
-    margin: 10px 0;
-}
-
-#sideNav .navbar-nav .nav-item .nav-link:hover {
-    color: #005b99;
+/* Profile Section */
+#sideNav .navbar-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
 #sideNav .navbar-brand img {
     width: 150px;
+    height: 150px;
     border-radius: 50%;
     margin-bottom: 10px;
+    border: 3px solid white;
 }
+
+#sideNav .navbar-nav {
+    flex-direction: column; /* Stack navigation items vertically */
+    width: 100%;
+}
+
+#sideNav .navbar-nav .nav-item {
+    text-align: center;
+}
+
+#sideNav .navbar-nav .nav-link {
+    font-weight: 700;
+    color: #007acc;
+    text-transform: uppercase;
+    margin: 10px 0;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+}
+
+#sideNav .navbar-nav .nav-link:hover {
+    color: #005b99;
+}
+
+/* Social Icons */
+#sideNav .social-icon {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin: 0 0.5rem;
+}
+
+#sideNav .social-icon:hover {
+    color: #007acc;
+}
+
+
+
 
 .social-icons a {
     color: #007acc;
