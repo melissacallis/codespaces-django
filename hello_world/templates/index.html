@@ -211,63 +211,85 @@
 </section>
 
 <!-- Projects Carousel -->
+<!-- Projects Carousel -->
 <section class="resume-section" id="projects-carousel">
     <div class="container my-5">
         <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Carousel Indicators -->
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
+            <!-- Carousel Inner -->
             <div class="carousel-inner">
+                <!-- First Slide -->
                 <div class="carousel-item active">
                     <div class="card">
-                        <img class="card-img-top" src="{% static 'img/auctionscreenshot.png' %}" alt="Auction Project">
+                        <a href="https://projectsheroku-46cc8d3cc4e6.herokuapp.com/">
+                            <img class="card-img-top" src="{% static 'img/auctionscreenshot.png' %}" alt="Auction Project Screenshot">
+                        </a>
                         <div class="card-body">
                             <h5 class="card-title">Auction Project Includes</h5>
-                            <ul>
-                                <li>Django Modeling and database updating</li>
-                                <li>Handling form submissions</li>
+                            <ul class="fa-ul mb-0">
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Django Modeling and database updating</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Handling form submissions</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Create user and product authentication</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Template rendering and data presentation</li>
                             </ul>
+                            <a href="https://projectsheroku-46cc8d3cc4e6.herokuapp.com/">View Project</a>
                         </div>
                     </div>
                 </div>
+                <!-- Second Slide -->
                 <div class="carousel-item">
                     <div class="card">
-                        <img class="card-img-top" src="{% static 'img/suctionscreenshot.png' %}" alt="Resume Builder">
+                        <a href="https://recipesapp1-3b8e5650c089.herokuapp.com/">
+                            <img class="card-img-top" src="{% static 'img/recipescreenshot.png' %}" alt="Recipe Project Screenshot">
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">Resume Builder</h5>
-                            <ul>
-                                <li>Dynamic Resume Generation</li>
-                                <li>PDF Formatting with WeasyPrint</li>
+                            <h5 class="card-title">Recipe Project Includes</h5>
+                            <ul class="fa-ul mb-0">
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Webscraping and data manipulation</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>API requests and webscraping for grocery list; nutrition data</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Sends text messages using email-to-SMS gateways</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Creates HTML tables with Pandas</li>
                             </ul>
+                            <a href="https://recipesapp1-3b8e5650c089.herokuapp.com/">View Project</a>
                         </div>
                     </div>
                 </div>
+                <!-- Third Slide -->
                 <div class="carousel-item">
                     <div class="card">
-                        <img class="card-img-top" src="{% static 'img/recipescreenshot.png' %}" alt="Recipe Project">
+                        <a href="https://resume-app-fe1365adc407.herokuapp.com/">
+                            <img class="card-img-top" src="{% static 'img/resumebuilder.png' %}" alt="Resume Builder Project Screenshot">
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">Recipe Project</h5>
-                            <ul>
-                                <li>Webscraping and data manipulation</li>
-                                <li>API requests and HTML tables</li>
+                            <h5 class="card-title">Resume Builder Project Includes</h5>
+                            <ul class="fa-ul mb-0">
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Dynamic Resume Generation</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>AI Integration with Gemini API</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>PDF Formatting with WeasyPrint</li>
                             </ul>
+                            <a href="https://resume-app-fe1365adc407.herokuapp.com/">View Project</a>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Carousel Controls -->
             <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
     </div>
 </section>
+
 
 
 <section class="resume-section" id="awards">
