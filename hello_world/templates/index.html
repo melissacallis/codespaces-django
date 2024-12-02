@@ -182,249 +182,153 @@
 
 
 
-<!-- Skills -->
+<!-- Skills Section -->
 <section class="resume-section" id="skills">
-<div class="resume-section-content">
     <div class="container my-5">
         <div class="card-header" style="background-color: lightblue; color: black; font-size: 30px;">
             Skills & Projects
         </div>
-        <section>
         <div class="card-body">
             <div class="row">
-                <!-- First Column -->
+                <!-- Skills Content -->
                 <div class="col-md-6">
                     <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"> <img src="https://th.bing.com/th?q=Python+Icon&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.5&pid=InlineBlock&mkt=en-US&cc=US&setlang=en&adlt=strict&t=1&mw=247" alt="Python Icon" width="60" height="60"></i></li>
-                        <li class="list-inline-item"><img src= "https://www.tc-web.it/wp-content/uploads/2018/07/javascript_logo.jpg" width="60" height="60"></li>
-                        <li class="list-inline-item"><img src= "https://th.bing.com/th/id/OIP.2iM-LS6y-ohoSNBO8WZUVgHaHa?pid=ImgDet&rs=1" width="60" height="60"></li>
-                        <li class="list-inline-item"><img src= "https://th.bing.com/th/id/OIP.KlLKd0eCgMdlaUcTPhK3owAAAA?pid=ImgDet&rs=1" width="70" height="60"></li>
-                        <li class="list-inline-item"><img src= "https://th.bing.com/th/id/OIP.ijGNsIwDPRIax9J88w72hAHaHa?w=128&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" width="70" height="60"></li>
-                        <li class="list-inline-item"><img src= "https://th.bing.com/th/id/OIP.5Atf7_Tnt_LchLdqCHLYCQHaEM?w=264&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" width="80" height="60"></li>
-
-                        <!-- Add your skills here -->
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><img src="https://th.bing.com/th?q=Python+Icon&w=120&h=120&c=1" alt="Python Icon" width="60"></li>
+                        <li class="list-inline-item"><img src="https://www.tc-web.it/wp-content/uploads/2018/07/javascript_logo.jpg" width="60"></li>
                     </ul>
                 </div>
-                <!-- Second Column -->
-
                 <div class="col-md-6">
                     <div class="subheading mb-3">Workflow</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mobile-First, Responsive Design
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Browser Testing & Debugging
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Testing and Quality Assurance
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Browser Testing & Debugging
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Error Logging and Monitoring
-                        </li>
-                        <!-- Add your workflow items here -->
+                    <ul>
+                        <li>Mobile-First, Responsive Design</li>
+                        <li>Cross Browser Testing & Debugging</li>
                     </ul>
                 </div>
             </div>
-        </section><div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
-            <!-- Carousel Indicators (optional) -->
+        </div>
+    </div>
+</section>
+
+<!-- Projects Carousel -->
+<section class="resume-section" id="projects-carousel">
+    <div class="container my-5">
+        <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2"></button>
             </div>
-        
-            <!-- Carousel Items -->
             <div class="carousel-inner">
-                <!-- First Slide -->
                 <div class="carousel-item active">
-                    <div class="card mb-4">
-                        <a href="https://projectsheroku-46cc8d3cc4e6.herokuapp.com/">
-                            <img class="card-img-top" src="{% static 'img/auctionscreenshot.png' %}" alt="Auction Project Screenshot">
-                        </a>
+                    <div class="card">
+                        <img class="card-img-top" src="{% static 'img/auctionscreenshot.png' %}" alt="Auction Project">
                         <div class="card-body">
                             <h5 class="card-title">Auction Project Includes</h5>
-                            <ul class="fa-ul mb-0">
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Django Modeling and database updating</li>
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Handling form submissions</li>
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Create user and product authentication</li>
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Template rendering and data presentation</li>
+                            <ul>
+                                <li>Django Modeling and database updating</li>
+                                <li>Handling form submissions</li>
                             </ul>
-                            <a href="https://projectsheroku-46cc8d3cc4e6.herokuapp.com/">View Project</a>
                         </div>
                     </div>
                 </div>
-
                 <div class="carousel-item">
-                    <div class="card mb-4">
-                        <a href="https://projectsheroku-46cc8d3cc4e6.herokuapp.com/">
-                            <img class="card-img-top" src="{% static 'img/suctionscreenshot.png' %}" alt="Resume Builder Project Screenshot">
-                        </a>
+                    <div class="card">
+                        <img class="card-img-top" src="{% static 'img/suctionscreenshot.png' %}" alt="Resume Builder">
                         <div class="card-body">
-                            <h5 class="card-title">Resume Builder Project Includes</h5>
-                            <ul class="fa-ul mb-0">
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Dynamic Resume Generation</li>
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>AI Integration with Gemini API</li>
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>PDF Formatting with WeasyPrint</li>
+                            <h5 class="card-title">Resume Builder</h5>
+                            <ul>
+                                <li>Dynamic Resume Generation</li>
+                                <li>PDF Formatting with WeasyPrint</li>
                             </ul>
-                            <a href="https://projectsheroku-46cc8d3cc4e6.herokuapp.com//">View Project</a>
                         </div>
                     </div>
                 </div>
-            </div>
-        
-                <!-- Second Slide -->
                 <div class="carousel-item">
-                    <div class="card mb-4">
-                        <a href="https://recipesapp1-3b8e5650c089.herokuapp.com/">
-                            <img class="card-img-top" src="{% static 'img/recipescreenshot.png' %}" alt="Recipe Project Screenshot">
-                        </a>
+                    <div class="card">
+                        <img class="card-img-top" src="{% static 'img/recipescreenshot.png' %}" alt="Recipe Project">
                         <div class="card-body">
-                            <h5 class="card-title">Recipe Project Includes</h5>
-                            <ul class="fa-ul mb-0">
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Webscraping and data manipulation</li>
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>API requests for and webscraping for grocery list; nutrition data</li>
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Sends text messages using email-to-SMS gateways</li>
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Creates HTML tables with Pandas</li>
+                            <h5 class="card-title">Recipe Project</h5>
+                            <ul>
+                                <li>Webscraping and data manipulation</li>
+                                <li>API requests and HTML tables</li>
                             </ul>
-                            <a href="https://recipesapp1-3b8e5650c089.herokuapp.com/">View Project</a>
-                        </div>
-                    </div>
-
-        
-                <!-- Third Slide -->
-                <div class="carousel-item">
-                    <div class="card mb-4">
-                        <a href="https://resume-app-fe1365adc407.herokuapp.com/">
-                            <img class="card-img-top" src="{% static 'img/resumebuilder.png' %}" alt="Resume Builder Project Screenshot">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">Resume Builder Project Includes</h5>
-                            <ul class="fa-ul mb-0">
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Dynamic Resume Generation</li>
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>AI Integration with Gemini API</li>
-                                <li><span class="fa-li"><i class="fas fa-check"></i></span>PDF Formatting with WeasyPrint</li>
-                            </ul>
-                            <a href="https://resume-app-fe1365adc407.herokuapp.com/">View Project</a>
                         </div>
                     </div>
                 </div>
             </div>
-        
-            <!-- Carousel Controls -->
             <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="carousel-control-prev-icon"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="carousel-control-next-icon"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-
-
-
-<!-- Custom CSS to Position Controls at the Bottom and Ensure Visibility -->
-<style>
-    .carousel-controls-bottom {
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-
-    /* Style carousel control icons for visibility */
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-        background-color: rgba(0, 0, 0, 0.5); /* Darken background for better visibility */
-        width: 50px;
-        height: 50px;
-        border-radius: 50%; /* Make icons circular */
-    }
-
-    /* Ensure carousel images are full width */
-    .carousel-item img {
-        width: 100%;
-        height: auto; /* Maintain aspect ratio */
-    }
-</style>
-
-
-
-
-
-
-</section>
-
-<!-- Awards & Certifications -->
-<section class="resume-section" id="awards">
-<div class="resume-section-content">
-    <div class="container my-5">
-        <div class="card-header" style="background-color: lightblue; color: black; font-size: 30px;">
-            Awards & Certifications
-        </div>
-        <div class="card-body">
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                    <i class="fas fa-trophy text-warning me-2"></i> CS50 Python - Harvard
-                    <!-- Thumbnail Image with PDF Icon -->
-                    <img
-                    class="thumbnail-image"
-                    <img src="{% static 'img/cs50p.png' %}"
-                    alt="PDF Thumbnail"
-                    data-pdf-src="{% static 'img/cs50p.png' %}"/>
-                </li>
-                <li class="list-group-item">
-                    <i class="fas fa-trophy text-warning me-2"></i> Introduction to Web Development with HTML5, CSS3, and JavaScript
-                    <img
-                    class="thumbnail-image"
-                    src="{% static 'img/webdev.png' %}"
-                    alt="PDF Thumbnail"
-                    data-pdf-src="{% static 'img/cs50p.png' %}"
-                    />
-                </li>
-                <li class="list-group-item">
-                    <i class="fas fa-trophy text-warning me-2"></i> Introduction to Cloud Computing- IBM Certification
-                    <img
-                    class="thumbnail-image"
-                    src="{% static 'img/cloudcomputing.png' %}"
-                    alt="PDF Thumbnail"
-                    data-pdf-src="{% static 'img/cloudcomputing.png' %}"
-                    />
-                </li>
-
-                <!-- Add your award/certification items here -->
-            </ul>
-        </div>
     </div>
-</div>
 </section>
 
-        <hr class="m-0" />
-        <!-- Interests-->
-        <section class="resume-section" id="interests">
-            <div class="container my-5">
-                <h2 class="mb-5">Interests</h2>
-                <p><em>"I'm not just a Python enthusiast; 
-                    I'm an insatiable learner on a relentless quest for excellence. 
-                    My heart beats for Python, and my curiosity knows no bounds. I don't simply embrace challenges; 
-                    I thrive on them. When you hire me, you're not just getting a skilled Python expert; you're getting a dedicated, lifelong learner who lives and breathes innovation. 
-                    Together, we'll push the boundaries of what's possible, and that's where true excitement lies."</em></p>
 
+<section class="resume-section" id="awards">
+    <div class="resume-section-content">
+        <div class="container my-5">
+            <h2 class="text-center mb-4" style="background-color: lightblue; color: black; padding: 10px;">
+                Awards & Certifications
+            </h2>
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card" style="background-color: rgba(173, 216, 230, 0.6);">
+                        <img 
+                            src="{% static 'img/cs50p.png' %}" 
+                            class="card-img-top" 
+                            alt="CS50 Python - Harvard" 
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title text-center">
+                                <i class="fas fa-trophy text-warning me-2"></i>CS50 Python - Harvard
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card" style="background-color: rgba(173, 216, 230, 0.6);">
+                        <img 
+                            src="{% static 'img/webdev.png' %}" 
+                            class="card-img-top" 
+                            alt="Introduction to Web Development" 
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title text-center">
+                                <i class="fas fa-trophy text-warning me-2"></i>Introduction to Web Development
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="card" style="background-color: rgba(173, 216, 230, 0.6);">
+                        <img 
+                            src="{% static 'img/cloudcomputing.png' %}" 
+                            class="card-img-top" 
+                            alt="Introduction to Cloud Computing" 
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title text-center">
+                                <i class="fas fa-trophy text-warning me-2"></i>Introduction to Cloud Computing
+                            </h5>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-        <hr class="m-0" />
+        </div>
 
+    </div>
+</section>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
     <!-- Bootstrap core JS -->
